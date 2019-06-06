@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: myresrc-base
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.2.50:8848
+        file-extension: yaml

@@ -2,6 +2,7 @@ package com.xzh.myresrc.admin.test;
 
 import com.xzh.myresrc.admin.db.tables.daos.SysUserDao;
 import com.xzh.myresrc.admin.db.tables.pojos.SysUser;
+import org.jooq.DSLContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.n3r.idworker.IdWorker;
@@ -23,6 +24,9 @@ public class SysUserTest {
     private SysUserDao sysUserDao;
 
     @Autowired
+    private DSLContext dslContext;
+
+    @Autowired
     private IdWorker idWorker;
 
     @Test
@@ -31,6 +35,7 @@ public class SysUserTest {
         sysUser.setUserId(idWorker.nextId());
 
     }
+
 
 
 }

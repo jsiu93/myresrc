@@ -3,7 +3,7 @@
     <!-- Configure the database connection here -->
     <jdbc>
         <driver>com.mysql.jdbc.Driver</driver>
-        <url>jdbc:mysql://127.0.0.1:3306/myresrc_admin?useUnicode=true&amp;characterEncoding=UTF8</url>
+        <url>jdbc:mysql://127.0.0.1:3306/myresrc_base?useUnicode=true&amp;characterEncoding=UTF8</url>
         <user>root</user>
         <password>123456</password>
 
@@ -87,7 +87,7 @@
 
                  If left empty, jOOQ will generate all available schemata. See the
                  manual's next section to learn how to generate several schemata -->
-            <inputSchema>myresrc_admin</inputSchema>
+            <inputSchema>myresrc_base</inputSchema>
         </database>
 
         <generate>
@@ -107,7 +107,7 @@
                  jOOQ may append the schema name to this package if generating multiple schemas,
                  e.g. org.jooq.your.packagename.schema1
                       org.jooq.your.packagename.schema2 -->
-            <packageName>com.xzh.myresrc.admin.db</packageName>
+            <packageName>com.xzh.myresrc.base.db</packageName>
 
             <!-- The destination directory of your generated classes -->
             <directory>src/main/java</directory>

@@ -11,6 +11,7 @@
         <module>../myresrc-depend</module>
         <module>../myresrc-common</module>
         <module>../myresrc-admin</module>
+        <module>../myresrc-base</module>
     </modules>
 
     <packaging>pom</packaging>

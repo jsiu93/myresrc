@@ -1,7 +1,6 @@
 package com.xzh.myresrc.admin.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,12 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class TestController {
 
-    @Value("${xzh.title}")
-    private String title;
 
     @GetMapping("test")
     public String test() {
-        return "hello " + title;
+        return "hello ";
     }
 
 }
